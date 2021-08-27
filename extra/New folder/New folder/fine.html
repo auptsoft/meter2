@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style>
+
+     .item {
+	margin:20px 20px;
+	border-style: none;
+	background-color: #eee;
+ 	width:30%;
+	float:left;
+	border-radius: 10px;
+        box-shadow: 2px 2px 5px gray;
+	transition: background-color 0.5s;
+     }
+
+     .item:hover {
+	background-color: #ccc;
+     }
+
+     .item-image {
+	float:left;
+     }
+     .item-title {
+	
+     }
+
+     .red-title {
+	text-align: center;
+	font-size: 30px;
+	color: #800;
+     }
+
+     .blue-title {
+	text-align: center;
+	font-size: 30px;
+	color: #008;
+     }
+
+     .yellow-title {
+	text-align: center;
+	font-size: 30px;
+	color: #888800;
+     }
+     
+     .error-text {
+	color: red;
+	margin-left: 20px;
+	font-size: 22px;
+	text-align:center;
+     }
+
+     .normal-text {
+	color: #090;
+	margin-left: 20px;
+	font-size: 22px;
+	text-align:center;
+     }
+
+     .item-fraud {
+	width:30%;
+	animation: anim 1s infinite alternate;
+     }
+
+     @keyframes anim {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+     }
+ 
+   </style>
+ </head>
+ <body>
+  
+     <div class="item"> 
+	<div class="item-image" >
+      	  <img src="good sign.jpg.jpg"/>
+	</div>
+     	<div>
+	  <h2 class="red-title" > RED PHASE </h2>
+	  <p class="normal-text" > This phase is working </p>
+	</div>
+     </div>
+    
+     <div class="item"> 
+	<div class="item-image" >
+      	  <img src="good sign.jpg.jpg"/>
+	</div>
+     	<div>
+	  <h2 class="blue-title" > BLUE PHASE </h2>
+	  <p class="normal-text" > This phase is working </p>
+	</div>
+     </div>
+    
+     <div class="item"> 
+	<div class="item-image" >
+      	  <img src="good sign.jpg.jpg"/>
+	</div>
+     	<div>
+	  <h2 class="yellow-title" > YELLOW PHASE </h2>
+	  <p class="normal-text" > This phase is working </p>
+	</div>
+     </div>
+     
+     <center>
+       <div class="item-fraud"> 
+	<div class="item-image" >
+      	  <img src="good sign.jpg.jpg"/>
+	</div>
+	<div>
+	  <h5>Status: All phases are working. from a meter located at;</h5> <h3>No. 3, 19th street, BDPA, Benin City</h3>
+	<div>
+       </div>
+     </center>
+
+ </body>
+</html>
