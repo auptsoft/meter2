@@ -96,6 +96,9 @@ class RequestController extends Controller
         if($dataArray[0]==2) {
             $res->blue_status = $dataArray[1];
         }
+        if($dataArray[0]==3) {
+            $res->neutral_status = $dataArray[1];
+        }
 
         $res->save();
         

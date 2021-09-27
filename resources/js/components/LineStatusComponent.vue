@@ -32,6 +32,16 @@
           </div>
      </div>
 
+     <div class="line-status">
+         <span style="color:black">Neutral Phase: {{status.blue_status==1 ? "Active": "Broken"}} </span>
+          <div v-if="status.neutral_status==1">
+              <img class="active-line" src="/meter/public/images/active_line.png" />
+          </div>
+          <div v-if="status.neutral_status==0">
+              <img class="broken-line" src="/meter/public/images/broken_line.png" />
+          </div>
+     </div>
+
      <!-- <div class="line-status"> Yellow Line: {{status.yellow_status==1 ? "OK": "Broken"}} </div>
      <div class="line-status"> Blue Line: {{status.blue_status==1 ? "OK": "Broken"}} </div> -->
   </div>
@@ -47,7 +57,7 @@ export default {
 
     methods: {
         getStatus() {
-           axios.get('/meter/public/api/fault').then((response)=>{
+           axios.get('/meter2/public/api/fault').then((response)=>{
                  let payload = response.data;
                  
                  if (payload.status == 'success') {

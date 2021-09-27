@@ -18,6 +18,7 @@ class CreateFaultStatusesTable extends Migration
             $table->integer('red_status')->default(1);
             $table->integer('yellow_status')->default(1);
             $table->integer('blue_status')->default(1);
+            $table->integer('neutral_status')->default(1);
             
             $table->timestamps();
         });
